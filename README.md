@@ -1,119 +1,128 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:0EA5E9,100:22C55E&height=240&section=header&text=Healthcare%20Operations%20%26%20Waitlist%20Dashboard&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Operational%20Analytics%20for%20Patient%20Waitlist%20Monitoring&descAlignY=58&descAlign=50" alt="banner" />
-</div>
+# Healthcare Operations Waitlist Dashboard
 
-<div align="center">
+![Healthcare](https://img.shields.io/badge/domain-healthcare-0f766e?style=flat-square)
+![Focus](https://img.shields.io/badge/focus-operations_analytics-1f6feb?style=flat-square)
+![Status](https://img.shields.io/badge/status-portfolio_ready-10b981?style=flat-square)
 
-[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=111827)](#)
-[![SQL](https://img.shields.io/badge/SQL-0F172A?style=for-the-badge&logo=postgresql&logoColor=white)](#)
-[![Power Query](https://img.shields.io/badge/Power_Query-1E3A8A?style=for-the-badge&logo=microsoft&logoColor=white)](#)
-[![Star Schema](https://img.shields.io/badge/Star_Schema-0B1324?style=for-the-badge&logo=databricks&logoColor=white)](#)
+**Healthcare Operations Waitlist Dashboard** is an operations intelligence project built to make waitlist pressure, service bottlenecks, and performance patterns easier to understand.
 
-</div>
-
-> A healthcare analytics dashboard focused on tracking patient waitlists, operational pressure, and specialty-level trends through structured reporting and clear visualization.
+It turns healthcare operations data into a clearer decision-support surface for teams that need to monitor backlog, compare pressure across specialties, and spot where operational attention is needed most.
 
 ---
 
-## Overview
+> Dashboard visuals and screenshot pack can be added as the next presentation pass.
 
-This project was built to help healthcare stakeholders monitor waitlist volume, compare case types, and identify operational bottlenecks across specialties and time periods.
+## Why this project exists
 
-It combines **data modeling**, **ETL thinking**, and **dashboard design** to turn complex healthcare data into a more usable decision-support tool.
+Waitlists are not just long lists of patients or cases.
+They are operational signals.
 
----
+If the only thing you can see is total queue size, you miss the more useful questions:
+- where pressure is building fastest
+- which specialties are slowing down
+- where long-wait cases are becoming more serious
+- how backlog changes over time
+- which parts of the system need attention first
 
-## Business Problem
+This project was built to make those signals easier to read.
 
-Healthcare operations teams need clear visibility into:
-- patient waitlist growth
-- long-wait cases
-- specialty pressure points
-- case-type distribution
-- month-over-month operational trends
+## What the dashboard helps you understand
 
-Without a structured dashboard, these patterns are harder to track and act on.
+- **Waitlist pressure** — where backlog is building most aggressively
+- **Service bottlenecks** — which operational lanes are slowing down
+- **Trend movement** — whether conditions are stabilizing or worsening over time
+- **Specialty comparison** — how pressure differs across healthcare areas
+- **Operational priorities** — which areas look most urgent
 
----
+## Core product view
 
-## Solution
+The dashboard is designed as a decision-support surface, not just a reporting page.
 
-This dashboard organizes healthcare waitlist data into a reporting model that supports:
-- operational monitoring
-- trend analysis
-- specialty comparison
-- segmented waitlist profiling
+That means the goal is not only to show metrics. It is to help answer:
+- what is happening
+- where the pressure is building
+- what deserves attention first
 
----
+## Key project strengths
 
-## Data Architecture
+- operational framing instead of generic chart reporting
+- clearer visibility into waitlist pressure and service behavior
+- star-schema thinking for cleaner analytical structure
+- ETL preparation designed for dashboard usability
+- portfolio-ready healthcare analytics presentation
+
+## Data architecture
 
 This project uses a **star schema** approach to keep reporting logic organized and scalable.
 
 ```text
-Source Data → Cleaning / Transformation → Analytical Model → Power BI Dashboard → Operational Insight
+Source data → cleaning and transformation → analytical model → dashboard layer → operational insight
 ```
 
 ### Modeling focus
-- fact table for waitlist measures
-- dimension views for specialty, case type, and date
-- simplified analytical structure for dashboard performance
+- fact table for waitlist and performance measures
+- dimensions for specialty, case type, and date
+- simplified structure for easier filtering and comparison
+
+## ETL and preparation
+
+Data was cleaned and transformed to support more consistent reporting and easier filtering inside the dashboard.
+
+Preparation focused on:
+- category standardization
+- cleaner reporting fields
+- time-based trend analysis
+- dashboard-friendly analytical structure
+
+## What this project demonstrates
+
+This repo is meant to show:
+- healthcare operations thinking
+- dashboard design for decision support
+- analytical communication
+- ETL and modeling awareness
+- practical BI storytelling
+
+## Why it matters
+
+A lot of dashboards stop at “here are the numbers.”
+
+This project pushes further by framing the data around operational meaning:
+- where delays are emerging
+- what parts of the system look overloaded
+- where service efficiency may be slipping
+- what deserves attention now
+
+That shift from reporting to interpretation is the real point of the project.
+
+## Tech stack
+
+- **Power BI** for dashboard design and reporting
+- **SQL** for querying and transformation logic
+- **Power Query** for shaping and cleaning data
+- **Star schema modeling** for analytical structure
+
+## Project status
+
+This is a strong portfolio-ready analytics dashboard focused on healthcare operations visibility.
+
+It should be read as an applied analytics project with a serious operational lens, not just a charting exercise.
+
+## Future improvements
+
+- add dashboard screenshots to the README
+- include a data model visual
+- add a short walkthrough/demo package
+- deepen annotated insight states for clearer storytelling
+- expand comparison and drill-down depth
+
+## Repo purpose
+
+This repository shows how healthcare operations data can be translated into a clearer, more decision-oriented dashboard experience.
+
+It is not just about charting backlog.
+It is about making system pressure easier to see.
 
 ---
 
-## ETL / Preparation
-
-Data was cleaned and transformed to support consistent reporting and easier filtering inside the dashboard.
-
-Key preparation goals:
-- standardize categories
-- handle reporting fields cleanly
-- prepare for time-based trend analysis
-- support stakeholder-friendly dashboard views
-
----
-
-## Dashboard Insights
-
-Examples of the questions this dashboard can answer:
-- Which specialties carry the highest waitlist pressure?
-- How many patients have been waiting 18+ months?
-- How do case types compare over time?
-- Where are operational bottlenecks growing?
-
----
-
-## Suggested Visual Additions
-
-This README will look even stronger with:
-- dashboard overview image
-- specialty ranking view
-- age / time-band segmentation view
-- monthly trend view
-- data model screenshot
-
----
-
-## Why This Project Matters
-
-This project demonstrates:
-- analytical structuring
-- business reporting logic
-- ETL thinking
-- data modeling awareness
-- practical BI communication
-
----
-
-## Future Improvements
-
-- add more drill-down interactions
-- publish a demo walkthrough
-- include a data model diagram image
-- add KPI summary cards for executive reporting
-
----
-
-<div align="center">
-  Built by Hazem Elerefy • Healthcare Analytics + BI + Data Modeling
-</div>
+Built by Hazem Elerefy
