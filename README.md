@@ -10,7 +10,9 @@ It turns healthcare operations data into a clearer decision-support surface for 
 
 ---
 
-> Dashboard visuals and screenshot pack can be added as the next presentation pass.
+<p align="center">
+  <img src="public/screenshots/01-dashboard-overview.png.png" alt="Healthcare Operations Waitlist Dashboard overview" width="100%" />
+</p>
 
 ## Why this project exists
 
